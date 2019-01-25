@@ -13,7 +13,7 @@ It comes preconfigured with:
 clone git repo : 
 
 ```
-git clone https://github.com/Vishu-Chaudhary/react-tiny-env.git
+git clone https://github.com/Vishu-Chaudhary/react-advance-env.git
 ```
 
 install dependencies: 
