@@ -1,6 +1,6 @@
 # react-tiny-env
 
-A basic plug and play react setup saves you time to configure all sort of things. 
+A plug and play react setup saves you time to configure all sort of things. 
 It comes preconfigured with:
 - redux
 - firebase
