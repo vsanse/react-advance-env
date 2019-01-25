@@ -4,8 +4,9 @@ A basic plug and play react setup saves you time to configure all sort of things
 It comes preconfigured with:
 - redux
 - firebase
-- babel7 
-- webpack4.
+- sass ( with bootstrap like reponsive framework pre-configured)
+- babel 7 
+- webpack 4.
 
 #### To get started
 
