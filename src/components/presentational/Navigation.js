@@ -10,6 +10,9 @@ const Navigation =(props)=>{
                     {/* <img src={require("../../static/images/logo.png")} alt="logo"/> */}
                 </Link>
             </div>
+            <div className="row text-center">
+                <p>Edit Navigation.js</p>
+            </div>
         </div>
     )
 }
