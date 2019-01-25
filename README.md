@@ -1,4 +1,4 @@
-# react-tiny-env
+# react-advance-env
 
 A plug and play react setup saves you time to configure all sort of things. 
 It comes preconfigured with:
