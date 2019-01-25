@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: $creme;
+    font-family: "HBold",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $charcoal;
+    -webkit-font-smoothing: antialiased;
+}
+
+img{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    @include HCBlack;
+    color:$charcoal;
+    font-size:2.5rem;
+}
+
+h2,h3,h4,h5,h6{
+    @include HMedium;
+    color:$grey;
+}
+
+p{
+    @include BookRegular;
+    font-size: 1.3rem;
+    color: $charcoal;
+    word-break: break-word;
+    flex: 100%;
+    margin: 0;
+    @include for-phone-only{
+        font-size: 1.1rem;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $lightblue;
+    @include HMedium;
+}
+
+button{
+    border: none;
+    background: $lightblue;
+    @include HCBold;
+    color: $white;
+    margin: 1rem auto;
+    width: 8rem;
+    border-radius:6px;
+    padding: 0.8rem;
+    @include BookRegular;
+    width: 8rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.center{
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.ql-editor{
+    blockquote{
+        border-left: 3px solid $grey !important;
+        padding-left: 1rem !important;
+        @include BookRegular;
+        font-size: 1.3rem;
+        font-style: italic;
+        margin:0 !important;
+    }
+ }

@@ -1,4 +1,24 @@
 $black: #000;
 $white: #fff;
+$charcoal : #2c2624;
+$grey: #555;
+$creme: #fefefe;
 
-$green: #00dc6a
+$green: #00dc6a;
+$blue: #2400af;
+$lightgreen: #d4fbd7;
+$lightblue: #06c;
+
+$grid__bp-sm: 576;
+$grid__bp-md: 768;
+$grid__bp-lg: 992;
+$grid__bp-xl: 1200;
+$grid__cols: 12;
+
+$map-grid-props: (
+        '': 0,
+        '-sm': $grid__bp-sm,
+        '-md': $grid__bp-md,
+        '-lg': $grid__bp-lg,
+        '-xl': $grid__bp-xl
+);

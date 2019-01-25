@@ -1,0 +1,117 @@
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-portait-only {
+    @media (min-width: 600px) and (max-width: 899px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin for-tablet-landscape-only {
+    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin for-desktop-only {
+    @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+  }
+  @mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+
+
+/*Border configuration for each direction
+Demo Code:  @include border(1px solid, #ccc, bottom top left right); 
+*/ 
+@mixin border($style, $color, $sides) {
+    @if ($style != "") {
+
+        @if ($sides == "") {
+            border: $style $color;
+
+        } @else {
+            @each $side in $sides {
+               @if ($side == 'top' or
+                    $side == 'right' or
+                    $side == 'bottom' or
+                    $side == 'left') {
+
+                    border-#{$side}: $style $color;
+                }
+            }
+        }  
+
+    }
+}
+
+/*box shdow configuration for each direction
+Demo Code: @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.5)); 
+*/ 
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+}
+
+/*FontAwsome*/
+@mixin fontAwesome {
+  display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+    src: $src;
+    font-display: auto;
+    text-rendering: auto;
+	}
+}
+
+@mixin BookRegular {
+  font-family:"BookRegular", sans-serif;
+}
+
+@mixin HCBlack {
+  font-family:"HCBlack", sans-serif;
+}
+
+@mixin HCBold {
+  font-family:"HCBlack", sans-serif;
+}
+
+@mixin HMedium {
+  font-family:"HMedium", sans-serif;
+}

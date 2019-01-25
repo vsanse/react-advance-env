@@ -1,5 +1,5 @@
 {
-  "name": "utter",
+  "name": "react-babel-env",
   "version": "1.0.0",
   "description": "Micro Blog",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/vsanse/utter.git"
+    "url": "git+https://gitlab.com/vsanse/react-babel-env.git"
   },
   "keywords": [
     "blog"
@@ -18,9 +18,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/vsanse/utter/issues"
+    "url": "https://gitlab.com/vsanse/react-babel-env/issues"
   },
-  "homepage": "https://gitlab.com/vsanse/utter#readme",
+  "homepage": "https://gitlab.com/vsanse/react-babel-env#readme",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

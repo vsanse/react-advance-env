@@ -1,0 +1,40 @@
+.editor-container{
+    .editor-row{
+        padding-top: 1rem;
+        .quill{
+            .ql-container {
+                border-bottom-left-radius: 0.5em;
+                border-bottom-right-radius: 0.5em;
+                background: #fefcfc;
+            }
+            
+            /* Snow Theme */
+            
+            .ql-snow.ql-toolbar {
+                display: block;
+                background: $lightgreen;
+                border-top-left-radius: 0.5em;
+                border-top-right-radius: 0.5em;
+            }
+            
+            .ql-editor {
+                min-height: 18em;
+            }
+        }
+    }
+    .preview{
+        .heading{
+            @include border(1px solid, $grey,bottom top);
+            padding: 1rem;
+        }
+        .ql-editor{
+           blockquote{
+               @include border(3px solid, $grey,left);
+               padding-left: 1rem;
+               @include BookRegular;
+               font-size: 1.3rem;
+           }
+        }
+    }
+}
+
