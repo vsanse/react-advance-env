@@ -16,6 +16,13 @@ clone git repo :
 git clone https://github.com/Vishu-Chaudhary/react-advance-env.git
 ```
 
+Make it your own:
+
+```
+rm -rf .git && git init && npm init
+```
+
+
 install dependencies: 
 ```
 npm install
