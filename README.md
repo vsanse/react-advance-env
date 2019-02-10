@@ -1,5 +1,5 @@
 
-# react-advance-env [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/Vishu-Chaudhary/react-advance-env)
+# react-advance-env [![Code Climate](https://img.shields.io/codeclimate/maintainability/Vishu-Chaudhary/react-advance-env.svg?style=flat)](https://codeclimate.com/github/Vishu-Chaudhary/react-advance-env) [![Code Climate](https://img.shields.io/codeclimate/maintainability-percentage/Vishu-Chaudhary/react-advance-env.svg?style=flat)](https://codeclimate.com/github/Vishu-Chaudhary/react-advance-env)
 
 A plug and play react setup saves you time to configure all sort of things. 
 It comes preconfigured with:
